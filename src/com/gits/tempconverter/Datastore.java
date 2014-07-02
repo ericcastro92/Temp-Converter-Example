@@ -13,7 +13,6 @@ import android.content.Context;
 
 public class Datastore 
 {
-	public final static String PREFS_NAME = "conversion_app";
 	public final static String HISTORY_FILE = "c_a_history";
 	private Context _context;
 	

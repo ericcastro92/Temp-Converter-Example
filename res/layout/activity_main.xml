@@ -1,0 +1,66 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${packageName}.${activityClass}"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="5dip"
+        android:paddingBottom="5dip"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+    	<EditText
+    	    android:id="@+id/fDegreeField"
+    	    android:layout_width="75dip"
+    	    android:layout_height="wrap_content"
+    	    android:inputType="numberDecimal"
+    	    android:maxLines="1" />
+    	
+ 	    <TextView
+    	    android:layout_width="wrap_content"
+    	    android:layout_height="wrap_content"
+    	    android:paddingRight="10dip"
+    	    android:textSize="25sp"
+    	    android:text="°F" />
+        
+        <Button
+            android:id="@+id/conversionButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Convert"/>
+        
+        <TextView
+    	    android:id="@+id/cDegreeField"
+    	    android:layout_width="100dip"
+    	    android:layout_height="wrap_content"
+    	    android:maxLines="1"
+    	    android:paddingLeft="10dip"
+    	    android:textSize="25sp"
+    	    android:text="- -.- - °C" />
+    </LinearLayout>
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#000000"/>
+    
+    <ListView
+        android:id="@+id/conversionList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"/>
+    
+    <TextView
+        android:id="@+id/conversionLabel"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="No conversion history" />
+
+</LinearLayout>
